@@ -4,25 +4,23 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-12 relative">
-      {/* Top divider */}
-      <div className="divider-glow mb-12" />
-
-      <div className="container mx-auto px-4">
+    <footer className="py-12 relative border-t border-border/30">
+      <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo & Copyright */}
           <div className="text-center md:text-left">
-            <a href="#home" className="font-display text-xl font-bold tracking-wider text-glow inline-block mb-2">
-              <span className="text-primary">P</span>K
+            <a href="#home" className="font-display text-xl font-bold tracking-tight inline-block mb-2">
+              <span className="text-primary">P</span>
+              <span className="text-foreground">K</span>
             </a>
             <p className="text-sm text-muted-foreground font-body">
-              © {currentYear} Priyansh Khalasi. All rights reserved.
+              © {currentYear} Priyansh Khalasi
             </p>
           </div>
 
           {/* Made with love */}
-          <p className="text-sm text-muted-foreground font-body flex items-center gap-1">
-            Built with <Heart size={14} className="text-primary fill-primary" /> and lots of code
+          <p className="text-sm text-muted-foreground font-body flex items-center gap-1.5">
+            Built with <Heart size={14} className="text-primary" /> and passion
           </p>
 
           {/* Social Links */}
@@ -31,26 +29,26 @@ const Footer = () => {
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
+              className="text-muted-foreground hover:text-primary transition-colors duration-300"
               aria-label="GitHub"
             >
-              <Github size={20} />
+              <Github size={18} />
             </a>
             <a
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
+              className="text-muted-foreground hover:text-primary transition-colors duration-300"
               aria-label="LinkedIn"
             >
-              <Linkedin size={20} />
+              <Linkedin size={18} />
             </a>
             <a
               href="mailto:priyanshkhalasi793@gmail.com"
-              className="text-muted-foreground hover:text-primary transition-colors"
+              className="text-muted-foreground hover:text-primary transition-colors duration-300"
               aria-label="Email"
             >
-              <Mail size={20} />
+              <Mail size={18} />
             </a>
           </div>
         </div>
