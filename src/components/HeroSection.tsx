@@ -10,28 +10,11 @@ const HeroSection = () => {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background Effects */}
-      <div className="absolute inset-0 bg-grid-pattern bg-[size:50px_50px] opacity-30" />
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(ellipse at 50% 30%, hsl(220 50% 15% / 0.4) 0%, transparent 60%)",
-        }}
-      />
-      
-      {/* Fog Effect */}
-      <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-background to-transparent" />
-
-      {/* Lightning Cracks */}
-      <div className="absolute top-1/4 right-1/4 w-px h-32 bg-gradient-to-b from-primary/60 via-primary/20 to-transparent rotate-12 animate-pulse-glow" />
-      <div className="absolute top-1/3 left-1/3 w-px h-24 bg-gradient-to-b from-accent/40 via-accent/10 to-transparent -rotate-6 animate-pulse-glow" style={{ animationDelay: "1s" }} />
-
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center">
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="text-center max-w-4xl mx-auto">
           {/* Pre-title */}
           <p
-            className="text-muted-foreground font-body text-lg md:text-xl mb-4 opacity-0 animate-fade-in"
+            className="text-muted-foreground font-body text-lg md:text-xl mb-6 opacity-0 animate-fade-in-up"
             style={{ animationDelay: "0.2s" }}
           >
             Hello, I'm
@@ -39,29 +22,29 @@ const HeroSection = () => {
 
           {/* Name */}
           <h1
-            className="text-5xl md:text-7xl lg:text-8xl font-display font-bold tracking-wider mb-6 opacity-0 animate-fade-in"
+            className="text-5xl md:text-7xl lg:text-8xl font-display font-bold tracking-tight mb-6 opacity-0 animate-fade-in-up"
             style={{ animationDelay: "0.4s" }}
           >
-            <span className="text-glow animate-flicker">PRIYANSH</span>
+            <span className="text-glow text-primary">Priyansh</span>
             <br />
-            <span className="text-foreground">KHALASI</span>
+            <span className="text-foreground">Khalasi</span>
           </h1>
 
           {/* Role */}
           <div
-            className="flex items-center justify-center gap-4 mb-8 opacity-0 animate-fade-in"
+            className="flex items-center justify-center gap-4 mb-8 opacity-0 animate-fade-in-up"
             style={{ animationDelay: "0.6s" }}
           >
-            <span className="divider-glow w-12 md:w-24" />
-            <h2 className="text-xl md:text-2xl font-display uppercase tracking-[0.3em] text-primary">
+            <span className="divider-cosmic w-12 md:w-20" />
+            <h2 className="text-lg md:text-xl font-display tracking-widest text-accent uppercase">
               Software Developer
             </h2>
-            <span className="divider-glow w-12 md:w-24" />
+            <span className="divider-cosmic w-12 md:w-20" />
           </div>
 
           {/* Tagline */}
           <p
-            className="text-muted-foreground font-body text-lg md:text-xl max-w-2xl mx-auto mb-12 opacity-0 animate-fade-in"
+            className="text-muted-foreground font-body text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed opacity-0 animate-fade-in-up"
             style={{ animationDelay: "0.8s" }}
           >
             Building modern, user-focused solutions with passion for crafting
@@ -70,46 +53,46 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 opacity-0 animate-fade-in"
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14 opacity-0 animate-fade-in-up"
             style={{ animationDelay: "1s" }}
           >
-            <a href="#projects" className="btn-neon-filled">
+            <a href="#projects" className="btn-cosmic-filled">
               View Projects
             </a>
-            <a href="#contact" className="btn-neon">
+            <a href="#contact" className="btn-cosmic">
               Get In Touch
             </a>
           </div>
 
           {/* Social Links */}
           <div
-            className="flex items-center justify-center gap-6 opacity-0 animate-fade-in"
+            className="flex items-center justify-center gap-6 opacity-0 animate-fade-in-up"
             style={{ animationDelay: "1.2s" }}
           >
             <a
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
+              className="p-3 rounded-full bg-secondary/30 text-muted-foreground hover:text-primary hover:bg-secondary/50 transition-all duration-500"
               aria-label="GitHub"
             >
-              <Github size={24} />
+              <Github size={20} />
             </a>
             <a
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
+              className="p-3 rounded-full bg-secondary/30 text-muted-foreground hover:text-primary hover:bg-secondary/50 transition-all duration-500"
               aria-label="LinkedIn"
             >
-              <Linkedin size={24} />
+              <Linkedin size={20} />
             </a>
             <a
               href="mailto:priyanshkhalasi793@gmail.com"
-              className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
+              className="p-3 rounded-full bg-secondary/30 text-muted-foreground hover:text-primary hover:bg-secondary/50 transition-all duration-500"
               aria-label="Email"
             >
-              <Mail size={24} />
+              <Mail size={20} />
             </a>
           </div>
         </div>
@@ -118,10 +101,10 @@ const HeroSection = () => {
       {/* Scroll Indicator */}
       <button
         onClick={handleScrollToAbout}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-muted-foreground hover:text-primary transition-colors animate-float cursor-pointer"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-muted-foreground hover:text-primary transition-all duration-500 animate-float-slow cursor-pointer"
         aria-label="Scroll to about section"
       >
-        <ChevronDown size={32} />
+        <ChevronDown size={28} />
       </button>
     </section>
   );

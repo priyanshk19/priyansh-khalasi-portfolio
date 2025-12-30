@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import ParticleBackground from "@/components/ParticleBackground";
+import SpaceBackground from "@/components/SpaceBackground";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
@@ -15,11 +15,8 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
-      {/* Floating Particles */}
-      <ParticleBackground />
-
-      {/* Noise Overlay */}
-      <div className="fixed inset-0 bg-noise opacity-[0.02] pointer-events-none z-[1]" />
+      {/* Space Background with Stars & Nebula */}
+      <SpaceBackground />
 
       {/* Navigation */}
       <Navbar />
