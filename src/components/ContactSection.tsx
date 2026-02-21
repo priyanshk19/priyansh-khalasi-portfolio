@@ -73,7 +73,7 @@ const ContactSection = () => {
 
   const socialLinks = [
     { icon: Github, label: "GitHub", href: "https://github.com/priyanshk19" },
-    { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
+    { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/priyansh-khalasi-241773280/" },
   ];
 
   return (
