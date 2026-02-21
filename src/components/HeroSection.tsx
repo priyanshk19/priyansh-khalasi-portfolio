@@ -79,7 +79,7 @@ const HeroSection = () => {
               <Github size={20} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/priyansh-khalasi-241773280/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-secondary/30 text-muted-foreground hover:text-primary hover:bg-secondary/50 transition-all duration-500"
