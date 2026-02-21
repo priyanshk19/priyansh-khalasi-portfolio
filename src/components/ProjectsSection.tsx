@@ -17,7 +17,7 @@ const projects: Project[] = [
     technologies: ["PHP", "HTML", "CSS", "JavaScript", "MySQL"],
     icon: ShoppingBag,
     gradient: "from-violet-500/20 to-purple-500/10",
-    githubUrl: "https://github.com/priyansh-khalasi/Ragnar-Footwear",
+    githubUrl: "https://github.com/priyanshk19/Footwear-store",
   },
   {
     title: "Shopping Store",
@@ -26,7 +26,7 @@ const projects: Project[] = [
     technologies: ["React", ".NET Framework", "SQL Server"],
     icon: ShoppingCart,
     gradient: "from-cyan-500/20 to-blue-500/10",
-    githubUrl: "https://github.com/priyansh-khalasi/Shopping-Store",
+    githubUrl: "https://github.com/priyanshk19/Clothing-Store",
   },
   {
     title: "GYM Management System",
@@ -35,7 +35,7 @@ const projects: Project[] = [
     technologies: ["JSF", "EJB", "CDI", "JPA", "MySQL"],
     icon: Dumbbell,
     gradient: "from-emerald-500/20 to-teal-500/10",
-    githubUrl: "https://github.com/priyansh-khalasi/GYM-Management-System",
+    githubUrl: "https://github.com/priyanshk19/Gym-Mangement",
   },
 ];
 

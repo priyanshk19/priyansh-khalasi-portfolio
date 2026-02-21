@@ -58,7 +58,7 @@ const ContactSection = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, label: "GitHub", href: "https://github.com" },
+    { icon: Github, label: "GitHub", href: "https://github.com/priyanshk19" },
     { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
   ];
 
