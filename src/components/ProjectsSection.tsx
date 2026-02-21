@@ -1,4 +1,4 @@
-import { ExternalLink, Github, ShoppingBag, ShoppingCart, Dumbbell } from "lucide-react";
+import { Github, ShoppingBag, ShoppingCart, Dumbbell } from "lucide-react";
 
 interface Project {
   title: string;
@@ -6,6 +6,7 @@ interface Project {
   technologies: string[];
   icon: typeof ShoppingBag;
   gradient: string;
+  githubUrl: string;
 }
 
 const projects: Project[] = [
@@ -16,6 +17,7 @@ const projects: Project[] = [
     technologies: ["PHP", "HTML", "CSS", "JavaScript", "MySQL"],
     icon: ShoppingBag,
     gradient: "from-violet-500/20 to-purple-500/10",
+    githubUrl: "https://github.com/priyansh-khalasi/Ragnar-Footwear",
   },
   {
     title: "Shopping Store",
@@ -24,6 +26,7 @@ const projects: Project[] = [
     technologies: ["React", ".NET Framework", "SQL Server"],
     icon: ShoppingCart,
     gradient: "from-cyan-500/20 to-blue-500/10",
+    githubUrl: "https://github.com/priyansh-khalasi/Shopping-Store",
   },
   {
     title: "GYM Management System",
@@ -32,6 +35,7 @@ const projects: Project[] = [
     technologies: ["JSF", "EJB", "CDI", "JPA", "MySQL"],
     icon: Dumbbell,
     gradient: "from-emerald-500/20 to-teal-500/10",
+    githubUrl: "https://github.com/priyansh-khalasi/GYM-Management-System",
   },
 ];
 
@@ -106,17 +110,16 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
           )}
         </div>
 
-        {/* Action Buttons */}
-        <div className="flex gap-3">
-          <button className="flex-1 btn-cosmic py-2.5 text-xs flex items-center justify-center gap-2">
-            <Github size={14} />
-            Code
-          </button>
-          <button className="flex-1 btn-cosmic-filled py-2.5 text-xs flex items-center justify-center gap-2">
-            <ExternalLink size={14} />
-            Demo
-          </button>
-        </div>
+        {/* Action Button */}
+        <a
+          href={project.githubUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full btn-cosmic py-2.5 text-xs flex items-center justify-center gap-2"
+        >
+          <Github size={14} />
+          View Code
+        </a>
       </div>
     </div>
   );
